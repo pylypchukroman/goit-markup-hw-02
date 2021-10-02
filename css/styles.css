@@ -1,8 +1,10 @@
-/* цвет основного текста #757575 */
+/* цвет основного фона #e5e5e5 */
+/* цвет фона футера #2f303a */
 /* вторичный цвет текста #212121 */
 /* белый #FFFFFF */
 /* акцент #2196F3 */
 /* цвет адреса rgba(255, 255, 255, 0.6) */
+/* цвет фона не активной кнопки #F5F4FA */
 
 :root {
   --primary-text-color: #757575;
@@ -21,17 +23,21 @@ footer {
 header {
   background-color: #ffffff;
 }
+ul {
+  list-style: none;
+}
+
+/* хедер */
 .page-header {
 }
+/* логотип */
 .logo {
   color: var(--accent-color);
 }
 .logo-second-color {
   color: #000000;
 }
-.logo-second-color-footer {
-  color: var(--primary-white);
-}
+/* навигация по страницах */
 .site-nav a {
   color: var(--title-text-color);
 }
@@ -39,10 +45,81 @@ header {
 .site-nav a:active {
   color: var(--accent-color);
 }
-.auth-nav a {
+/* навигация по контактах */
+.cont-nav a {
   color: var(--title-text-color);
 }
-.auth-nav a:hover,
-.auth-nav a:active {
+.cont-nav a:hover,
+.cont-nav a:active {
   color: var(--accent-color);
+}
+
+/* основная часть */
+/* блок хиро */
+.hero {
+}
+.hero-text {
+  color: var(--primary-white);
+}
+/* блок кнопок */
+.button {
+  color: var(--primary-white);
+  background-color: var(--accent-color);
+}
+.button.primary {
+  color: var(--primary-white);
+  background-color: var(--accent-color);
+}
+.button.secondaty {
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+}
+/* блок преимущества */
+.benefits {
+}
+.benefits-title {
+  color: var(--title-text-color);
+}
+.benefits-text {
+  color: var(--primary-text-color);
+}
+/* блок работы */
+.work {
+}
+.section-title {
+  color: var(--title-text-color);
+}
+/* блок команда */
+.team {
+}
+.team-name {
+  color: var(--title-text-color);
+}
+.team-position {
+  color: var(--primary-text-color);
+}
+/* блок фильтр */
+.filter {
+}
+/* блок проекты */
+.projects {
+}
+.projects-title {
+  color: var(--title-text-color);
+}
+.projects-description {
+  color: var(--primary-text-color);
+}
+
+/* футер */
+/* блок адреса */
+.address {
+  color: var(--primary-white);
+}
+/* блок контактов */
+.contacts a {
+  color: var(--secondary-white);
+}
+.logo-second-color-footer {
+  color: var(--primary-white);
 }
