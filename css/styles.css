@@ -11,3 +11,38 @@
   --primary-white: #ffffff;
   --secondary-white: rgba(255, 255, 255, 0.6);
 }
+
+body {
+  background-color: #e5e5e5;
+}
+footer {
+  background-color: #2f303a;
+}
+header {
+  background-color: #ffffff;
+}
+.page-header {
+}
+.logo {
+  color: var(--accent-color);
+}
+.logo-second-color {
+  color: #000000;
+}
+.logo-second-color-footer {
+  color: var(--primary-white);
+}
+.site-nav a {
+  color: var(--title-text-color);
+}
+.site-nav a:hover,
+.site-nav a:active {
+  color: var(--accent-color);
+}
+.auth-nav a {
+  color: var(--title-text-color);
+}
+.auth-nav a:hover,
+.auth-nav a:active {
+  color: var(--accent-color);
+}
