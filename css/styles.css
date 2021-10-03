@@ -1,5 +1,6 @@
 /* цвет основного фона #e5e5e5 */
 /* цвет фона футера #2f303a */
+/* цвет основного текста #757575 */
 /* вторичный цвет текста #212121 */
 /* белый #FFFFFF */
 /* акцент #2196F3 */
@@ -15,6 +16,7 @@
 }
 
 body {
+  color: var(--primary-text-color);
   background-color: #e5e5e5;
   font-family: Roboto, Arial, Helvetica, sans-serif;
   letter-spacing: 0.03em;
@@ -31,8 +33,8 @@ ul {
 }
 
 /* хедер */
-.page-header {
-}
+/* .page-header {
+} */
 /* логотип */
 .logo {
   color: var(--accent-color);
@@ -40,6 +42,7 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
 }
 .logo-second-color {
   color: #000000;
@@ -49,29 +52,33 @@ ul {
   line-height: 1.19;
 }
 /* навигация по страницах */
-.site-nav a {
+.site-nav-link {
   color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
-.site-nav a:hover,
-.site-nav a:active {
+.site-nav-link:hover,
+.site-nav-link:focus {
   color: var(--accent-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 /* навигация по контактах */
-.cont-nav a {
+.cont-nav-link {
   color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
-.cont-nav a:hover,
-.cont-nav a:active {
+.cont-nav-link:hover,
+.cont-nav-link:focus {
   color: var(--accent-color);
+  text-decoration: none;
 }
 
 /* основная часть */
@@ -89,21 +96,35 @@ ul {
   text-transform: uppercase;
 }
 /* блок кнопок */
-.button {
+.hero-button {
   color: var(--primary-white);
   background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
 }
-.button.primary {
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--title-text-color);
+  background-color: var(--primary-white);
+}
+/* .button.primary {
   color: var(--primary-white);
   background-color: var(--accent-color);
 }
 .button.secondaty {
   color: var(--title-text-color);
   background-color: #f5f4fa;
-}
+} */
 /* блок преимущества */
-.benefits {
-}
+/* .benefits {
+} */
 .benefits-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -111,12 +132,11 @@ ul {
   text-transform: uppercase;
 }
 .benefits-text {
-  color: var(--primary-text-color);
   line-height: 1.71;
 }
 /* блок работы */
-.work {
-}
+/* .work {
+} */
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -125,8 +145,8 @@ ul {
   text-align: center;
 }
 /* блок команда */
-.team {
-}
+/* .team {
+} */
 .team-name {
   color: var(--title-text-color);
   font-weight: 500;
@@ -135,17 +155,31 @@ ul {
   text-align: center;
 }
 .team-position {
-  color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 /* блок фильтр */
-.filter {
+/* .filter {
+} */
+.filter-button {
+  color: var(--title-text-color);
+  background-color: var(--primary-white);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--primary-white);
+  background-color: var(--accent-color);
 }
 /* блок проекты */
-.projects {
-}
+/* .projects {
+} */
 .projects-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -154,7 +188,6 @@ ul {
   letter-spacing: 0.06em;
 }
 .projects-description {
-  color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
 }
@@ -170,7 +203,9 @@ ul {
 .contacts a {
   color: var(--secondary-white);
   line-height: 1.17;
+  text-decoration: none;
 }
+/* логотип */
 .logo-second-color-footer {
   color: var(--primary-white);
   font-family: Raleway, Arial, Helvetica, sans-serif;
