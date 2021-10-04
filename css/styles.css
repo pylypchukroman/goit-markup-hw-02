@@ -67,8 +67,8 @@ ul {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.link-current {
-  background-color: var(--accent-color);
+.site-nav-link.current {
+  color: var(--accent-color);
 }
 /* навигация по контактах */
 .cont-nav-link {
