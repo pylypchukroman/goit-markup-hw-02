@@ -67,9 +67,12 @@ ul {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+.link-current {
+  background-color: var(--accent-color);
+}
 /* навигация по контактах */
 .cont-nav-link {
-  color: var(--title-text-color);
+  color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -128,6 +131,7 @@ ul {
 .benefits-title {
   color: var(--title-text-color);
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -198,12 +202,14 @@ ul {
   color: var(--primary-white);
   font-weight: 400;
   line-height: 1.7;
+  font-style: normal;
 }
 /* блок контактов */
 .contacts a {
   color: var(--secondary-white);
   line-height: 1.17;
   text-decoration: none;
+  font-style: normal;
 }
 /* логотип */
 .logo-second-color-footer {
