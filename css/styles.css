@@ -114,8 +114,8 @@ ul {
 }
 .hero-button:hover,
 .hero-button:focus {
-  color: var(--title-text-color);
-  background-color: var(--primary-white);
+  color: var(--primary-white);
+  background-color: #188ce8;
 }
 /* .button.primary {
   color: var(--primary-white);
